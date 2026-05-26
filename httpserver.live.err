@@ -1,0 +1,4 @@
+::ffff:127.0.0.1 - - [25/May/2026 12:17:44] code 404, message File not found
+::ffff:127.0.0.1 - - [25/May/2026 12:17:44] "GET /fsws HTTP/1.1" 404 -
+::ffff:127.0.0.1 - - [25/May/2026 12:37:51] code 404, message File not found
+::ffff:127.0.0.1 - - [25/May/2026 12:37:52] "GET /fsws HTTP/1.1" 404 -
