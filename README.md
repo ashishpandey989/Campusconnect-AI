@@ -1,78 +1,107 @@
-# CampusConnect Backend
+# 🚀 CampusConnect AI
 
-Minimal Django backend for the CampusConnect hackathon MVP.
+> Connect. Collaborate. Innovate.
 
-## What is included
-- Student registration and login
-- Profile fetch and update
-- Idea creation and listing
-- Teammate recommendation logic
-- Event listing
+CampusConnect AI is an AI-powered student collaboration and innovation platform built for a 24-hour hackathon.
 
-## Run locally
+The platform helps students:
+- 👨‍💻 Find teammates based on skills
+- 💡 Share project ideas
+- 🏆 Explore hackathons and events
+- 🤝 Build collaborations and startups
+
+---
+
+# 📌 Problem Statement
+
+College students often struggle to:
+- Find the right teammates
+- Collaborate on innovative ideas
+- Discover campus opportunities
+- Connect with like-minded students
+
+Most existing platforms are fragmented and not focused on student innovation ecosystems.
+
+---
+
+# 💡 Solution
+
+CampusConnect AI provides a centralized platform where students can:
+- Create profiles
+- Showcase skills and interests
+- Receive teammate recommendations
+- Share project ideas
+- Explore upcoming hackathons and events
+
+The platform uses simple AI-based matching logic to recommend teammates based on common skills and interests.
+
+---
+
+# ✨ Features
+
+## 🔐 Authentication
+- User Signup
+- User Login
+
+## 👤 Student Profiles
+- Name
+- Department
+- Year
+- Skills
+- Interests
+
+## 🤖 AI Teammate Suggestions
+- Skill-based matching
+- Interest-based recommendations
+
+## 💡 Idea Hub
+- Post project ideas
+- Browse innovative ideas
+- Upvote ideas
+
+## 📅 Events Dashboard
+- View hackathons
+- Explore workshops
+- Discover startup events
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+- HTML
+- CSS
+- JavaScript
+
+## Backend
+- Django REST Framework
+
+## Database
+- SQLite
+
+## AI Logic
+- Skill keyword matching
+- Interest similarity analysis
+
+---
+
+# 📂 Project Structure
+
 ```bash
-cd backend
-python manage.py migrate
-python manage.py runserver
-```
-
-## API routes
-- `POST /register`
-- `POST /login`
-- `GET /profile?email=student@example.com`
-- `PUT /profile`
-- `PATCH /profile`
-- `GET /students`
-- `GET /ideas`
-- `POST /ideas`
-- `POST /ideas/<id>/upvote`
-- `GET /events`
-- `GET /recommended-members?email=student@example.com`
-- `GET /invites`
-- `POST /invites`
-- `GET /help-posts`
-- `POST /help-posts`
-- `POST /help-posts/<id>/toggle`
-- `GET /activity`
-- `POST /activity`
-- `GET /explore-items`
-- `GET /tour-steps`
-
-## Request format
-The API accepts JSON and standard form submissions.
-
-## Sample payloads
-
-### Register
-```json
-{
-  "name": "Test User",
-  "email": "newstudent02@example.com",
-  "password": "pass12345",
-  "department": "CSE",
-  "year": "2nd Year",
-  "skills": ["Python", "Django"],
-  "interests": ["AI", "Backend"],
-  "bio": "Backend focused student."
-}
-```
-
-Use a fresh email like `newstudent02@example.com` for register tests so you avoid the expected duplicate-email `409` response if the same account was already created.
-
-### Login
-```json
-{
-  "email": "test@example.com",
-  "password": "pass12345"
-}
-```
-
-### Post idea
-```json
-{
-  "title": "Smart Study Buddy",
-  "category": "EdTech",
-  "description": "An app that suggests study groups.",
-  "author_email": "test@example.com"
-}
-```
+CampusConnect-AI/
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── assets/
+│
+├── backend/
+│   ├── users/
+│   ├── ideas/
+│   ├── teams/
+│   ├── events/
+│   └── config/
+│
+├── README.md
+└── project_brief.md
