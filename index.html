@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <title>CampusConnect AI</title>
+    <meta
+      name="description"
+      content="A campus collaboration platform with a bold neon theme, animated product showcase, and student-focused workflows."
+    />
+    <link rel="stylesheet" href="./style.css?v=5" />
+    <script type="module" src="./script.js?v=3" defer></script>
+  </head>
+  <body>
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#landing" data-nav>
+        <span class="brand-mark">CC</span>
+        <span>
+          <strong>CampusConnect AI</strong>
+          <small>Student collaboration hub</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav-link active" data-page-target="landing">Home</button>
+        <button class="nav-link" data-page-target="explore">Explore</button>
+        <button class="nav-link" data-page-target="auth">Login</button>
+        <button class="nav-link" data-page-target="dashboard">Dashboard</button>
+        <button class="nav-link" data-page-target="profile">Profile</button>
+        <button class="nav-link" data-page-target="ideas">Ideas</button>
+        <button class="nav-link" data-page-target="events">Events</button>
+        <button class="nav-link" data-page-target="help">Help</button>
+      </nav>
+
+      <button class="menu-button" id="menuButton" aria-label="Open menu">&#9776;</button>
+    </header>
+
+    <main class="app-shell">
+      <section class="page active" id="landing">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="hero-kicker">
+              <span class="pill">Campus innovation hub</span>
+              <span class="hero-status">Animated showcase ready</span>
+            </div>
+            <h1>Build teams, share ideas, and launch campus projects faster.</h1>
+            <p>
+              CampusConnect AI is now styled like a neon studio, with a looping product demo that
+              shows the profile flow, idea board, and dashboard in motion.
+            </p>
+
+            <div class="hero-chip-row">
+              <span class="hero-chip">Find teammates</span>
+              <span class="hero-chip">Share ideas</span>
+              <span class="hero-chip">Join events</span>
+              <span class="hero-chip">Ask for help</span>
+            </div>
+
+            <div class="cta-row">
+              <button class="btn primary" data-page-target="auth">Get Started</button>
+              <button class="btn secondary" data-page-target="dashboard">Open Demo</button>
+              <button class="btn secondary" data-page-target="explore">Explore Campus</button>
+              <button class="btn ghost" type="button" data-open-tour="campus">Take Tour</button>
+            </div>
+
+            <div class="mini-stats">
+              <div class="mini-card">
+                <span>Easy setup</span>
+                <strong>HTML + CSS + JS</strong>
+              </div>
+              <div class="mini-card">
+                <span>Simple logic</span>
+                <strong>Skill matching</strong>
+              </div>
+              <div class="mini-card">
+                <span>Hackathon ready</span>
+                <strong>Clean demo flow</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel card showcase-card">
+            <div class="showcase-media">
+              <picture>
+                <source srcset="./assets/campus-showcase.webp" type="image/webp" />
+                <img
+                  class="showcase-video"
+                  src="./assets/campus-showcase.gif"
+                  alt="Looping preview of the CampusConnect app screens"
+                />
+              </picture>
+              <div class="showcase-badge">Looping product demo</div>
+            </div>
+
+            <div class="showcase-copy">
+              <div class="card-header">
+                <div>
+                  <p class="muted">Dashboard preview</p>
+                  <h2>Your campus in one cinematic loop</h2>
+                </div>
+                <div class="spark">*</div>
+              </div>
+
+              <p>
+                The animation uses real app screens from the project so the landing page feels like
+                a live walkthrough instead of a static mockup.
+              </p>
+
+              <div class="showcase-badges">
+                <span class="showcase-tag">Profile flow</span>
+                <span class="showcase-tag">Ideas board</span>
+                <span class="showcase-tag">Dashboard</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-rail">
+          <button class="home-rail-card" type="button" data-home-action="profile">
+            <span class="home-step">01</span>
+            <h3>Create a profile</h3>
+            <p>Add skills and interests so the app can understand your strengths.</p>
+          </button>
+          <button class="home-rail-card" type="button" data-home-action="teammates">
+            <span class="home-step">02</span>
+            <h3>Find teammates</h3>
+            <p>Open matches, click a card, and send an invite in one tap.</p>
+          </button>
+          <button class="home-rail-card" type="button" data-home-action="explore">
+            <span class="home-step">03</span>
+            <h3>Launch projects</h3>
+            <p>Use ideas, events, and help to keep the project moving fast.</p>
+          </button>
+        </div>
+
+        <div class="feature-grid">
+          <button class="card feature-card feature-button" type="button" data-open-modal="teammates">
+            <h3>Find teammates</h3>
+            <p>Match with students who have similar skills and interests.</p>
+          </button>
+          <button class="card feature-card feature-button" type="button" data-open-modal="ideas">
+            <h3>Share ideas</h3>
+            <p>Post simple project ideas and see what others are building.</p>
+          </button>
+          <button class="card feature-card feature-button" type="button" data-open-modal="events">
+            <h3>Track events</h3>
+            <p>See upcoming hackathons, workshops, and campus events.</p>
+          </button>
+        </div>
+
+        <section class="spotlight">
+          <div class="spotlight-copy">
+            <span class="pill">Why it stands out</span>
+            <h2>Organized for a quick demo and a strong presentation</h2>
+            <p>
+              The landing page now guides visitors through the app with a clear path, animated
+              cards, and actions that immediately open the right section.
+            </p>
+          </div>
+          <div class="spotlight-grid">
+            <div class="spotlight-item">
+              <strong>Fast</strong>
+              <span>Actions open popups and pages instantly.</span>
+            </div>
+            <div class="spotlight-item">
+              <strong>Clear</strong>
+              <span>The layout separates hero, actions, and flow.</span>
+            </div>
+            <div class="spotlight-item">
+              <strong>Interactive</strong>
+              <span>Motion and hover states make it feel alive.</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="page" id="explore">
+        <div class="section-header">
+          <div>
+            <span class="pill">Explore</span>
+            <h2>Discover the campus innovation space</h2>
+            <p>Browse features, find inspiration, and jump into the parts you need.</p>
+          </div>
+          <div class="hero-mini-actions">
+            <button class="btn secondary" type="button" data-open-tour="campus">Guided tour</button>
+            <button class="btn primary" type="button" data-page-target="dashboard">Go to dashboard</button>
+          </div>
+        </div>
+
+        <div class="explore-search card">
+          <div>
+            <p class="muted">Quick search</p>
+            <h3>Search features, ideas, events, and teammates</h3>
+          </div>
+          <div class="search-row">
+            <input id="exploreSearch" type="text" placeholder="Type: teammates, ideas, events, tour..." />
+            <button class="btn primary" type="button" id="exploreReset">Reset</button>
+          </div>
+        </div>
+
+        <div id="exploreResults" class="explore-grid"></div>
+
+        <div class="explore-footer card">
+          <div>
+            <p class="muted">Need a quick start?</p>
+            <h3>Use the guided tour or jump directly to a section</h3>
+          </div>
+          <div class="hero-mini-actions">
+            <button class="btn secondary" type="button" data-page-target="ideas">Open Ideas</button>
+            <button class="btn secondary" type="button" data-page-target="events">Open Events</button>
+            <button class="btn secondary" type="button" data-page-target="profile">Open Profile</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="auth">
+        <div class="split-layout">
+          <div class="card info-panel">
+            <span class="pill">Login / Signup</span>
+            <h2>Create your student profile</h2>
+            <p>
+              Fill in your name, department, skills, and interests. The app will use this to show
+              teammate suggestions.
+            </p>
+            <ul class="check-list">
+              <li>Simple forms</li>
+              <li>Basic validation</li>
+              <li>LocalStorage demo support</li>
+            </ul>
+          </div>
+
+          <div class="card form-card">
+            <div class="tab-row">
+              <button class="tab active" data-auth-mode="login">Login</button>
+              <button class="tab" data-auth-mode="signup">Signup</button>
+            </div>
+
+            <form id="authForm" class="form-grid">
+              <div class="field signup-only hidden">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter password" required />
+              </div>
+
+              <div class="field signup-only hidden">
+                <label for="department">Department</label>
+                <input id="department" name="department" type="text" placeholder="CSE / IT / ECE" />
+              </div>
+
+              <div class="field signup-only hidden">
+                <label for="year">Year</label>
+                <input id="year" name="year" type="text" placeholder="1st Year" />
+              </div>
+
+              <div class="field signup-only hidden">
+                <label for="skills">Skills</label>
+                <input id="skills" name="skills" type="text" placeholder="React, Python, UI/UX" />
+              </div>
+
+              <div class="field signup-only hidden">
+                <label for="interests">Interests</label>
+                <input id="interests" name="interests" type="text" placeholder="Hackathons, Startups" />
+              </div>
+
+              <div class="field signup-only hidden full-width">
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Write a short intro about yourself"></textarea>
+              </div>
+
+              <p id="authMessage" class="message full-width"></p>
+              <button class="btn primary full-width" type="submit" id="authSubmit">Login</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="dashboard">
+        <div class="section-header">
+          <div>
+            <span class="pill">Dashboard</span>
+            <h2>Welcome back, <span id="dashboardName">Student</span></h2>
+            <p>Quick view of teammates, ideas, and events.</p>
+          </div>
+          <div class="stats-row">
+            <button class="stat-card card stat-action" type="button" data-dashboard-stat="ideas">
+              <span>Ideas</span>
+              <strong id="ideaCount">0</strong>
+            </button>
+            <button class="stat-card card stat-action" type="button" data-dashboard-stat="events">
+              <span>Events</span>
+              <strong id="eventCount">0</strong>
+            </button>
+            <button class="stat-card card stat-action" type="button" data-dashboard-stat="students">
+              <span>Students</span>
+              <strong id="studentCount">0</strong>
+            </button>
+            <button class="stat-card card stat-action" type="button" data-dashboard-stat="invites">
+              <span>Invites</span>
+              <strong id="inviteCount">0</strong>
+            </button>
+            <button class="stat-card card stat-action" type="button" data-dashboard-stat="teams">
+              <span>Teams formed</span>
+              <strong id="teamCount">0</strong>
+            </button>
+            <button class="stat-card card stat-action" type="button" data-dashboard-stat="updates">
+              <span>Updates</span>
+              <strong id="updateCount">0</strong>
+            </button>
+          </div>
+        </div>
+
+        <div class="split-grid">
+          <section class="card">
+            <div class="card-header">
+              <div>
+                <p class="muted">Suggested teammates</p>
+                <h3>Best matches for you</h3>
+              </div>
+            </div>
+            <div id="recommendations" class="stack"></div>
+          </section>
+
+          <section class="card">
+            <div class="card-header">
+              <div>
+                <p class="muted">Quick actions</p>
+                <h3>What you can do next</h3>
+                <p class="muted">Click any action below to open a popup.</p>
+              </div>
+            </div>
+            <div class="action-list">
+              <button class="action-item" data-open-modal="teammates" type="button">
+                <strong>Find teammates</strong>
+                <span>See students with similar skills and interests.</span>
+              </button>
+              <button class="action-item" data-open-modal="ideas" type="button">
+                <strong>Post idea</strong>
+                <span>Share a startup or project idea.</span>
+              </button>
+              <button class="action-item" data-open-modal="events" type="button">
+                <strong>Check events</strong>
+                <span>Look at hackathons and workshops.</span>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <section class="card dashboard-updates">
+          <div class="card-header">
+            <div>
+              <p class="muted">Latest updates</p>
+              <h3>Activity feed</h3>
+            </div>
+            <button class="btn secondary" type="button" data-page-target="help">Go to Help</button>
+          </div>
+          <div id="dashboardUpdates" class="stack"></div>
+        </section>
+      </section>
+
+      <section class="page" id="profile">
+        <div class="split-layout">
+          <div class="card">
+            <span class="pill">Profile</span>
+            <h2>Fill your details</h2>
+            <p>These details help the app suggest teammates with similar skills.</p>
+
+            <form id="profileForm" class="form-grid">
+              <div class="field">
+                <label for="profileName">Name</label>
+                <input id="profileName" name="profileName" type="text" />
+              </div>
+              <div class="field">
+                <label for="profileDepartment">Department</label>
+                <input id="profileDepartment" name="profileDepartment" type="text" />
+              </div>
+              <div class="field">
+                <label for="profileYear">Year</label>
+                <input id="profileYear" name="profileYear" type="text" />
+              </div>
+              <div class="field">
+                <label for="profileSkills">Skills</label>
+                <input id="profileSkills" name="profileSkills" type="text" placeholder="React, Python, HTML" />
+              </div>
+              <div class="field">
+                <label for="profileInterests">Interests</label>
+                <input id="profileInterests" name="profileInterests" type="text" placeholder="Hackathons, AI" />
+              </div>
+              <div class="field full-width">
+                <label for="profileBio">Bio</label>
+                <textarea id="profileBio" name="profileBio" rows="4" placeholder="Short introduction"></textarea>
+              </div>
+              <p id="profileMessage" class="message full-width"></p>
+              <button class="btn primary full-width" type="submit">Save Profile</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <span class="pill">Preview</span>
+            <h2 id="previewName">Your Name</h2>
+            <p id="previewMeta">Department • Year</p>
+            <p id="previewBio" class="preview-bio">Your short bio will appear here.</p>
+
+            <div class="preview-section">
+              <h3>Skills</h3>
+              <div id="previewSkills" class="chip-row"></div>
+            </div>
+
+            <div class="preview-section">
+              <h3>Interests</h3>
+              <div id="previewInterests" class="chip-row"></div>
+            </div>
+
+            <div class="tip-box">
+              <strong>Tip:</strong>
+              <span>Add clear skills like React, Python, UI/UX, or Django for better teammate matching.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="ideas">
+        <div class="split-layout">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <span class="pill">Idea Hub</span>
+                <h2>Post and browse ideas</h2>
+                <p>Use simple cards so the demo stays easy to understand.</p>
+              </div>
+            </div>
+
+            <form id="ideaForm" class="form-grid">
+              <div class="field">
+                <label for="ideaTitle">Idea Title</label>
+                <input id="ideaTitle" type="text" placeholder="Smart Study Buddy" required />
+              </div>
+
+              <div class="field">
+                <label for="ideaCategory">Category</label>
+                <select id="ideaCategory">
+                  <option>EdTech</option>
+                  <option>AI/ML</option>
+                  <option>Healthcare</option>
+                  <option>FinTech</option>
+                  <option>Utility</option>
+                  <option>Startup</option>
+                  <option>Agriculture</option>
+                  <option>Cybersecurity</option>
+                  <option>IoT</option>
+                </select>
+              </div>
+
+              <div class="field full-width">
+                <label for="ideaDescription">Description</label>
+                <textarea id="ideaDescription" rows="4" placeholder="Explain your idea in a few lines" required></textarea>
+              </div>
+
+              <p id="ideaMessage" class="message full-width"></p>
+              <button class="btn primary full-width" type="submit">Post Idea</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <span class="pill">Ideas</span>
+                <h2>Explore project ideas</h2>
+              </div>
+            </div>
+
+            <div class="filter-row" id="ideaFilters"></div>
+            <div id="ideaList" class="stack"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="events">
+        <div class="section-header">
+          <div>
+            <span class="pill">Events</span>
+            <h2>Upcoming hackathons and workshops</h2>
+            <p>Simple event cards keep the demo focused and clear.</p>
+          </div>
+        </div>
+
+        <div id="eventList" class="card-grid"></div>
+      </section>
+
+      <section class="page" id="help">
+        <div class="split-layout">
+          <div class="card">
+            <span class="pill">Help</span>
+            <h2>Post a problem or ask for help</h2>
+            <p>Use this space if your teammate faces an issue or needs guidance.</p>
+
+            <form id="helpForm" class="form-grid">
+              <div class="field">
+                <label for="helpTitle">Issue title</label>
+                <input id="helpTitle" type="text" placeholder="Login not working" required />
+              </div>
+              <div class="field">
+                <label for="helpCategory">Category</label>
+                <select id="helpCategory">
+                  <option>Technical issue</option>
+                  <option>Team issue</option>
+                  <option>Idea help</option>
+                  <option>Event help</option>
+                  <option>General question</option>
+                </select>
+              </div>
+              <div class="field full-width">
+                <label for="helpDescription">Details</label>
+                <textarea id="helpDescription" rows="5" placeholder="Describe the issue clearly..." required></textarea>
+              </div>
+              <p id="helpMessage" class="message full-width"></p>
+              <button class="btn primary full-width" type="submit">Post Help Request</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <p class="muted">Help board</p>
+                <h3>Current issues and updates</h3>
+              </div>
+            </div>
+            <div id="helpBoard" class="stack"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop hidden" id="teammateModal" aria-hidden="true">
+      <div class="modal card" role="dialog" aria-modal="true" aria-labelledby="teammateModalTitle">
+        <div class="card-header">
+          <div>
+            <span class="pill">Teammates</span>
+            <h2 id="teammateModalTitle">Suggested teammates</h2>
+            <p>Click close when you are done checking matches.</p>
+          </div>
+          <button class="modal-close" id="closeTeammateModal" type="button" aria-label="Close teammates popup">
+            ×
+          </button>
+        </div>
+        <div id="teammateDetail" class="selected-teammate"></div>
+        <div id="teammateModalBody" class="stack"></div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop hidden" id="ideasModal" aria-hidden="true">
+      <div class="modal card" role="dialog" aria-modal="true" aria-labelledby="ideasModalTitle">
+        <div class="card-header">
+          <div>
+            <span class="pill">Ideas</span>
+            <h2 id="ideasModalTitle">Latest project ideas</h2>
+            <p>Quick look at some ideas students can build or join.</p>
+          </div>
+          <button class="modal-close" id="closeIdeasModal" type="button" aria-label="Close ideas popup">
+            ×
+          </button>
+        </div>
+        <div id="ideasModalBody" class="stack"></div>
+        <div class="modal-footer">
+          <button class="btn secondary" id="openIdeasPage" type="button">Open full page</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop hidden" id="eventsModal" aria-hidden="true">
+      <div class="modal card" role="dialog" aria-modal="true" aria-labelledby="eventsModalTitle">
+        <div class="card-header">
+          <div>
+            <span class="pill">Events</span>
+            <h2 id="eventsModalTitle">Upcoming events</h2>
+            <p>See what is coming next on campus.</p>
+          </div>
+          <button class="modal-close" id="closeEventsModal" type="button" aria-label="Close events popup">
+            ×
+          </button>
+        </div>
+        <div id="eventsModalBody" class="stack"></div>
+        <div class="modal-footer">
+          <button class="btn secondary" id="openEventsPage" type="button">Open full page</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop hidden" id="tourModal" aria-hidden="true">
+      <div class="modal card" role="dialog" aria-modal="true" aria-labelledby="tourModalTitle">
+        <div class="card-header">
+          <div>
+            <span class="pill">Guided tour</span>
+            <h2 id="tourModalTitle">Take a quick walk through the app</h2>
+            <p>Use the buttons below to move through the main features.</p>
+          </div>
+          <button class="modal-close" id="closeTourModal" type="button" aria-label="Close tour popup">
+            ×
+          </button>
+        </div>
+        <div id="tourModalBody" class="tour-body"></div>
+        <div class="modal-footer">
+          <button class="btn secondary" id="prevTourStep" type="button">Previous</button>
+          <button class="btn primary" id="nextTourStep" type="button">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop hidden" id="dashboardStatModal" aria-hidden="true">
+      <div class="modal card" role="dialog" aria-modal="true" aria-labelledby="dashboardStatTitle">
+        <div class="card-header">
+          <div>
+            <span class="pill">Dashboard details</span>
+            <h2 id="dashboardStatTitle">Details</h2>
+            <p id="dashboardStatSubtitle">Tap a stat to see more.</p>
+          </div>
+          <button class="modal-close" id="closeDashboardStatModal" type="button" aria-label="Close details popup">
+            ×
+          </button>
+        </div>
+        <div id="dashboardStatBody" class="stack"></div>
+      </div>
+    </div>
+  </body>
+</html>
